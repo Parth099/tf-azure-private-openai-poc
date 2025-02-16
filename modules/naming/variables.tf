@@ -24,6 +24,7 @@ variable "svc_shorthand" {
     "Network Security Group" = "nsg"
     "Subnet"                 = "sb"
     "Kubernetes Cluster"     = "kc"
+    "Key Vault"              = "kv"
   }
 }
 
