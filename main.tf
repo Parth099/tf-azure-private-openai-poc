@@ -14,12 +14,11 @@ module "naming" {
   svc_name         = each.value
   application_name = var.app_name
   region           = var.location
-  environment      = "prod"
+  environment      = "dev"
 }
 
 module "rg" {
   source = "./modules/azurerm_resourcegroup"
   name   = module.naming["Resource Group"].name
 }
-
 
